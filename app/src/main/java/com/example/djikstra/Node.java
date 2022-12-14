@@ -21,9 +21,10 @@ public class Node implements Comparable<Node> {
     public void addAdjacentNode(Node node, int weight) {
         adjacentNodes.put(node, weight);
     }
+
     @Override
     public int compareTo(Node node){
-        return Integer.compare(this.distance, node.getDistance());
+        return Integer.compare(this.distance, node.getdistance());
     }
     public void main(String[] args){
     Node nodeA = new Node("a");
